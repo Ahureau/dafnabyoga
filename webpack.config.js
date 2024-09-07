@@ -53,6 +53,22 @@ module.exports = {
       template: "./src/about.html",
       filename: "about.html",
     }),
+    new HtmlWebpackPlugin({
+      template: "./src/yoga.html",
+      filename: "yoga.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/bodywork.html",
+      filename: "bodywork.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/corporate.html",
+      filename: "corporate.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/contact.html",
+      filename: "contact.html",
+    }),
     new MiniCssExtractPlugin({
       filename: "[name].css",
     }),
