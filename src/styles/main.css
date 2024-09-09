@@ -1,72 +1,72 @@
 
 @font-face {
   font-family: 'Lato';
-  src: url('../fonts/Lato-ThinItalic.ttf') format('ttf');
+  src: url('../fonts/Lato-ThinItalic.ttf') format('truetype');
   font-weight: 100;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Lato';
-  src: url('../fonts/Lato-Thin.ttf') format('ttf');
+  src: url('../fonts/Lato-Thin.ttf') format('truetype');
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Lato';
-  src: url('../fonts/Lato-Light.ttf') format('ttf');
+  src: url('../fonts/Lato-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Lato';
-  src: url('../fonts/Lato-LightItalic.ttf') format('ttf');
+  src: url('../fonts/Lato-LightItalic.ttf') format('truetype');
   font-weight: 300;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Lato';
-  src: url('../fonts/Lato-Regular.ttf') format('ttf');
+  src: url('../fonts/Lato-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Lato';
-  src: url('../fonts/Lato-Italic.ttf') format('ttf');
+  src: url('../fonts/Lato-Italic.ttf') format('truetype');
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Lato';
-  src: url('../fonts/Lato-Bold.ttf') format('ttf');
+  src: url('../fonts/Lato-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Lato';
-  src: url('../fonts/Lato-BoldItalic.ttf') format('ttf');
+  src: url('../fonts/Lato-BoldItalic.ttf') format('truetype');
   font-weight: 700;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Lato';
-  src: url('../fonts/Lato-Black.ttf') format('ttf');
+  src: url('../fonts/Lato-Black.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Lato';
-  src: url('../fonts/Lato-Bold.ttf') format('ttf');
+  src: url('../fonts/Lato-BlackItalic.ttf') format('truetype');
   font-weight: 900;
-  font-style: normal;
+  font-style: italic;
 }
 
 :root {
@@ -77,6 +77,28 @@
 }
 
 body {
-  font-family: "Lato", Arial, sans-serif;
+  font-family: 'Lato', Arial, sans-serif;
+  /* font-weight: 700; */
+  background-color: var(--lightBeige);
+}
+
+.headerLink {
+  text-decoration: none;
+  color: var(--darkGreen);
+}
+
+.p900 {
   font-weight: 900;
+}
+.p700 {
+  font-weight: 700;
+}
+.p400 {
+  font-weight: 400;
+}
+.p300 {
+  font-weight: 300;
+}
+.p100 {
+  font-weight: 100;
 }
