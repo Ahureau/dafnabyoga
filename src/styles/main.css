@@ -160,21 +160,24 @@ body {
   flex-direction: column;
   width: 100%;
   align-items: center;
-}
-
-#maxWidthContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  max-width: 1400px;
+  margin: 0;
 }
 
 .header {
   display: flex;
   width: 100%;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-bottom: solid 1px var(--darkGreen);
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1400px;
 }
 
 .headerLinks {
