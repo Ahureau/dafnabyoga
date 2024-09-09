@@ -1,3 +1,82 @@
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-ThinItalic.ttf') format('ttf');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-Thin.ttf') format('ttf');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-Light.ttf') format('ttf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-LightItalic.ttf') format('ttf');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-Italic.ttf') format('ttf');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-Bold.ttf') format('ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-BoldItalic.ttf') format('ttf');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-Black.ttf') format('ttf');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-Bold.ttf') format('ttf');
+  font-weight: 900;
+  font-style: normal;
+}
+
+:root {
+  --darkGreen: #1B3B36;
+  --lightGreen: #C0D8D4;
+  --green: #536969;
+  --lightBeige: #FDF9F3;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Lato", Arial, sans-serif;
+  font-weight: 900;
 }
