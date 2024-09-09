@@ -83,5 +83,6 @@ module.exports = {
       },
     },
     hot: true,
+    watchFiles: ['src/**/*'],
   },
 };
