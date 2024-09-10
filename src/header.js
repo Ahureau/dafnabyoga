@@ -29,13 +29,15 @@ headerTemplate.innerHTML = `
               </defs>
               </svg>
           </a>
-          <div class="headerLinks">
-            <a href="bodywork.html" class="link">Holistic bodywork</a>
-            <a href="yoga.html" class="link">Yoga</a>
-            <a href="corporate.html" class="link">Corporate</a>
-            <a href="about.html" class="link">About</a>
-            <a href="contact.html" class="button">Get in touch</a>
-          </div>
+            <nav class="headerNav">
+              <ul class="headerLinks">
+                <li class="menuListItem"><a href="bodywork.html" class="link">Holistic bodywork</a></li>
+                <li class="menuListItem"><a href="yoga.html" class="link">Yoga</a></li>
+                <li class="menuListItem"><a href="corporate.html" class="link">Corporate</a></li>
+                <li class="menuListItem"><a href="about.html" class="link">About</a></li>
+                <li class="menuListItem"><a href="contact.html" class="button">Get in touch</a></li>
+              </ul>
+            </nav>
         </div>
       </header>
 `;

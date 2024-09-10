@@ -180,10 +180,68 @@ body {
   max-width: 1400px;
 }
 
+.headerNav {
+  display: flex;
+}
+
+/* Large screens */
+#hamburgerButton {
+  display: none;
+}
+
+.srOnly {
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
+
+/* Small screens */
+@media screen and (max-width: 768px) {
+  .logo, .logo svg {
+    width: 37px;
+    height: 40px;
+  }
+  
+  #hamburgerButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+  }
+
+  #hamburgerButton svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .headerLinks {
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 73px;
+    padding-right: 40px;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    margin: 0;
+    height: 100vh;
+    border-right: solid 1px var(--darkGreen);
+  }
+}
+
 .headerLinks {
   display: flex;
   gap: 1rem;
+}
 
+.menuListItem {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .link {
