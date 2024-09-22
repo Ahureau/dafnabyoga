@@ -2,7 +2,6 @@ import "./styles/main.css";
 
 import { addHeader } from './header.js';
 import { addFooter } from "./footer.js";
-import { images } from './images';
 
 const body = document.body;
 

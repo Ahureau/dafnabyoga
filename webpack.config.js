@@ -4,6 +4,8 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const ESLintPlugin = require("eslint-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
+
 
 module.exports = {
   entry: "./src/index.js",
@@ -65,6 +67,11 @@ module.exports = {
     new ESLintPlugin({
       extensions: ["js", "jsx"],
     }),
+    new CopyPlugin({
+      patterns: [
+        { from: "src/images", to: "images" },
+      ],
+    }),    
   ],
   optimization: {
     minimize: true,
