@@ -207,7 +207,58 @@ body {
   margin: 0;
 }
 
+h2 {
+  font-weight: 700;
+  color: var(--darkGreen);
+  margin: 0;
+}
 
+p {
+  color: var(--darkGreen);
+}
+
+label {
+  color: var(--darkGreen);
+  font-weight: 700;
+}
+
+.doubleElement {
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+  padding: 9rem 1rem;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.halfContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2rem;
+}
+
+.halfContainerSmallGap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+}
+
+.max1400 {
+  max-width: 1400px;
+}
+
+.doubleElement {
+  display: flex;
+  width: 100vw;
+  height: auto;
+}
 
 
 
@@ -421,6 +472,33 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
+/* NEWSLETTER */
+.mailingListList {
+  color: var(--darkGreen);
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+}
+
+.mailingListList li p {
+  display: inline;
+}
+
+.mailingListImage {
+  height: 300px;
+}
+
+.mailingListImage .image {
+  object-position: bottom;
+}
 
 
 
