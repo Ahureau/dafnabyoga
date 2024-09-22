@@ -1,10 +1,12 @@
 import "./styles/main.css";
 
 import { addHeader } from './header.js';
+import { addFooter } from "./footer.js";
 
 const body = document.body;
 
 addHeader(body);
+addFooter(body);
 
 document.addEventListener('DOMContentLoaded', () => {
     const hamburgerButton = document.getElementById('hamburgerButton');
