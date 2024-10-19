@@ -203,6 +203,13 @@ body {
   margin: 0;
 }
 
+h1 {
+  font-weight: 700;
+  color: var(--darkGreen);
+  margin: 0;
+  font-size: 3rem;
+}
+
 h2 {
   font-weight: 700;
   color: var(--darkGreen);
@@ -211,7 +218,10 @@ h2 {
 }
 
 p {
+  font-weight: 300;
   color: var(--darkGreen);
+  margin: 0;
+  font-size: 1rem;
 }
 
 label {
@@ -221,27 +231,61 @@ label {
 
 main {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
 }
 
 .doubleElement {
   display: flex;
+  height: fit-content;
   width: 100%;
   gap: 2rem;
   padding: 9rem 1rem;
 }
 
+.darkBackground {
+  background-color: var(--darkGreen);
+}
+
+.darkBackground h1, h2, h3, p, li {
+  color: var(--lightBeige);
+}
+
+.decorativeImage {
+  display: flex;
+  width: 100%;
+}
+
 @media screen and (max-width: 768px) {
   .doubleElement {
     padding: 3.5rem 1.5rem;
+    flex-direction: column;
+  }
+
+  .decorativeImage {
+    width: 100vw;
+    height: 435px;
+    align-self: center;
+  }
+
+  .reverseFlex {
+    flex-direction: column-reverse;
   }
 }
 
 .image {
+  display: flex;
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .image {
+    border-radius: 0rem;
+  }
 }
 
 .halfContainer {
@@ -277,10 +321,13 @@ main {
   max-width: 2000px;
 }
 
+.maxHeight600 {
+  max-height: 600px;
+}
+
 .doubleElement {
   display: flex;
   width: 100%;
-  height: auto;
 }
 
 .button {
