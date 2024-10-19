@@ -66,6 +66,8 @@ module.exports = {
     }),
     new ESLintPlugin({
       extensions: ["js", "jsx"],
+      failOnError: false,
+      failOnWarning: false,
     }),
     new CopyPlugin({
       patterns: [

@@ -2,10 +2,12 @@ import "./styles/main.css";
 
 import { addHeader } from './header.js';
 import { addFooter } from "./footer.js";
+import { addMailingSection } from "./mailingList.js";
 
 const body = document.body;
 
 addHeader(body);
+addMailingSection(body);
 addFooter(body);
 
 document.addEventListener('DOMContentLoaded', () => {

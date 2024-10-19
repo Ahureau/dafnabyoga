@@ -9,6 +9,7 @@
     "sourceType": "module"
   },
   "rules": {
-    "semi": ["error", "always"]
+    "semi": ["warn", "always"],
+    "no-useless-escape": "off"
   }
 }

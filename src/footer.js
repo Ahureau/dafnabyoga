@@ -1,6 +1,6 @@
-const headerTemplate = document.createElement('template');
+const footerTemplate = document.createElement('template');
 
-headerTemplate.innerHTML = `
+footerTemplate.innerHTML = `
     <footer>
       <ul class="socialMediaList">
         <li class="socialMediaListItem">
@@ -38,6 +38,6 @@ headerTemplate.innerHTML = `
 
 export function addFooter(whereAdd) {
   if (!document.querySelector('footer')){ // Ensure it only creates a footer if there are none.
-  whereAdd.append(headerTemplate.content.cloneNode(true));
+  whereAdd.append(footerTemplate.content.cloneNode(true));
   }
 }
