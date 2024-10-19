@@ -211,6 +211,7 @@ h2 {
   font-weight: 700;
   color: var(--darkGreen);
   margin: 0;
+  font-size: 2rem;
 }
 
 p {
@@ -227,6 +228,12 @@ label {
   width: 100%;
   gap: 2rem;
   padding: 9rem 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .doubleElement {
+    padding: 3.5rem 1.5rem;
+  }
 }
 
 .image {
@@ -531,7 +538,21 @@ output {
   display: none;
 }
 
+/* small screens */
+@media screen and (max-width: 768px) {
+  #mailingListSection {
+    flex-direction: column;
+  }
 
+  .mailingListImage {
+    width: 100vw;
+    align-self: center;
+  }
+
+  .mailingListImage .image {
+    border-radius: 0rem;
+  }
+}
 
 
 
