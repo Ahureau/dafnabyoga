@@ -1,0 +1,42 @@
+.heroLinks {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 36.875rem;
+    justify-content: end;
+    background-size: cover; 
+    background-position: center;
+}
+
+#bodyworkLink {
+    background-image: url(../images/2407_Dafna_©TheresaMariaForthaus-02402.webp);
+}
+
+#yogaLink {
+    background-image: url(../images/image_11zon.webp);
+}
+
+#corporateLink {
+    background-image: url(../images/Image2.webp);
+}
+
+#aboutLink {
+    background-image: url(../images/DSCF7135_11zon.webp);
+}
+
+.heroLinksContent {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to top, var(--darkGreen), transparent);
+    padding: 1.5rem;
+    padding-top: 3.625rem;
+}
+
+.heroLinksContent h2 {
+    color: var(--lightBeige);
+}
+
+.heroLinksContent p {
+    margin: 0;
+    color: var(--lightBeige);
+}

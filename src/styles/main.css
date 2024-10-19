@@ -65,10 +65,6 @@ textarea, select {
   font-size: inherit;
 }
 
-/* Make sure textar) {
-  min-height: 10em;
-}
-
 /* Anything that has been anchored to should have extra scroll margin */
 :target {
   scroll-margin-block: 5ex;
@@ -201,7 +197,7 @@ body {
   background-color: var(--lightBeige);
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   align-items: center;
   margin: 0;
@@ -221,6 +217,11 @@ p {
 label {
   color: var(--darkGreen);
   font-weight: 700;
+}
+
+main {
+  display: flex;
+  width: 100%;
 }
 
 .doubleElement {
@@ -257,13 +258,24 @@ label {
   gap: 1rem;
 }
 
+.fullContainerNoGap {
+  display: flex;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .fullContainerNoGap {
+    flex-direction: column;
+  }
+}
+
 .max1400 {
   max-width: 1400px;
 }
 
 .doubleElement {
   display: flex;
-  width: 100vw;
+  width: 100%;
   height: auto;
 }
 
@@ -447,12 +459,13 @@ label {
   .headerLinks {
     flex-direction: column;
     position: fixed;
-    left: -100%;
+    left: -120%;
     top: 0;
     padding: 2rem;
     margin: 0;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
+    min-width: 100%;
     border-right: solid 1px var(--darkGreen);
     background-color: var(--lightBeige);
     transition: left 0.3s ease;
@@ -567,7 +580,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   gap: 1rem;
   padding: 2rem;
   background-color: var(--darkGreen);
