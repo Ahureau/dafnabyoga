@@ -6,6 +6,7 @@
     justify-content: end;
     background-size: cover; 
     background-position: center;
+    text-decoration: none;
 }
 
 #bodyworkLink {
@@ -27,9 +28,35 @@
 .heroLinksContent {
     display: flex;
     flex-direction: column;
+    gap: 0.25rem;
+    height: 8rem;
     background: linear-gradient(to top, var(--darkGreen), transparent);
     padding: 1.5rem;
-    padding-top: 3.625rem;
+    padding-top: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .heroLinksContent {
+        height: fit-content;    
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 910px) {
+    .heroLinksContent {
+        height: 12rem;    
+    }
+}
+
+@media screen and (min-width: 911px) and (max-width: 1260px) {
+    .heroLinksContent {
+        height: 10rem; 
+    }
+}
+
+.heroLinks:hover > .heroLinksContent {
+    padding-top: 1.5rem;
+    background-color: var(--darkGreen);
+    transition: all 200ms ease;
 }
 
 .heroLinksContent h2 {

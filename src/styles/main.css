@@ -273,6 +273,10 @@ main {
   max-width: 1400px;
 }
 
+.max2000{
+  max-width: 2000px;
+}
+
 .doubleElement {
   display: flex;
   width: 100%;
