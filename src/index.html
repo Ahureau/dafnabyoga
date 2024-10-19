@@ -13,23 +13,26 @@
       </div>
       <div class="halfContainer">
         <h2>Join my newsletter</h2>
-        <div class="halfContainerSmallGap">
-          <label for="newsletterEmail">Email</label>
-          <input type="email" id="newsletterEmail" name="email" placeholder="youremail@email.com" maxlength="100" pattern="^.{2,}@.{2,}\..{2,}$" required>
-          <ul class="mailingListList">
-            <li>
-              <p>
-                Get notified first about workshops and events
-              </p>
-            </li>
-            <li>
-              <p>
-                Only used to keep you up-to-date about my events and practice
-              </p>
-            </li>
-          </ul>
-          <button class="button">Subscribe</button>
-        </div>
+          <form id="newsletterEmailForm" action="" method="post" class="halfContainerSmallGap">
+            <div class="smallInputGap">
+              <label for="newsletterEmail">Email</label>
+              <input type="email" id="newsletterEmail" name="email" placeholder="youremail@email.com" maxlength="100" pattern="^.{2,}@.{2,}\..{2,}$" autocomplete="email" required>
+            </div>
+            <ul class="mailingListList">
+              <li>
+                <p>
+                  Get notified first about workshops and events
+                </p>
+              </li>
+              <li>
+                <p>
+                  Only used to keep you up-to-date about my events and practice
+                </p>
+              </li>
+            </ul>
+            <input type="submit" value="Subscribe" class="button">
+            <output name="confirmation" for="newsletterEmail">Thanks for signing up, I'll be in touch soon!</output>
+          </form>
       </div>
     </section>
   </body>

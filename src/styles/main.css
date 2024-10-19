@@ -260,6 +260,28 @@ label {
   height: auto;
 }
 
+.button {
+  text-decoration: none;
+  font-weight: 400;
+  color: var(--lightBeige);
+  display: flex;
+  border-radius: 0.5rem;
+  width: fit-content;
+  align-items: center;
+  height: 2.5rem;
+  background-color: var(--darkGreen);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border: solid 1px var(--darkGreen);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--lightBeige);
+  color: var(--darkGreen);
+  cursor: pointer;
+}
+
 
 
 
@@ -330,27 +352,6 @@ label {
 
 .link:hover::after {
   transform: scaleX(1);
-}
-
-.button {
-  text-decoration: none;
-  font-weight: 400;
-  color: var(--lightBeige);
-  display: flex;
-  border-radius: 0.5rem;
-  width: fit-content;
-  align-items: center;
-  height: 2.5rem;
-  background-color: var(--darkGreen);
-  padding-left: 1rem;
-  padding-right: 1rem;
-  border: solid 1px var(--darkGreen);
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.button:hover {
-  background-color: var(--lightBeige);
-  color: var(--darkGreen);
 }
 
 
@@ -498,6 +499,36 @@ label {
 
 .mailingListImage .image {
   object-position: bottom;
+}
+
+#newsletterEmail {
+  appearance: none;
+  border: none;
+  border-bottom: 1px solid var(--darkGreen);
+  outline: none;
+  background-color: transparent;
+  color: var(--darkGreen);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+#newsletterEmail::placeholder {
+  color: var(--green); 
+}
+
+.smallInputGap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.25rem;
+}
+
+output {
+  background-color: #C0D8D4;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  color: var(--darkGreen);
+  display: none;
 }
 
 
