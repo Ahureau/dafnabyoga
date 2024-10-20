@@ -28,10 +28,16 @@
     background-image: url(../images/DSCF7135_11zon.webp);
 }
 
-.heroLinksContent {
+.heroContent {
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
+    width: 100%;
+}
+
+.heroLinksContent {
+    display: flex;
+    gap: 1rem;
     height: 8rem;
     background: linear-gradient(to top, var(--darkGreen), transparent);
     padding: 1.5rem;
@@ -63,15 +69,25 @@
     transition: all 200ms ease;
 }
 
-.heroLinksContent h2 {
-    color: var(--lightBeige);
-}
-
-.heroLinksContent p {
+.heroLinksContent h2,
+.heroLinksContent p,
+.heroLinksContent a,
+.heroLinksContent svg {
     margin: 0;
     color: var(--lightBeige);
 }
 
+.heroLinksContent svg {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .heroLinksContent svg {
+        display: flex;
+        scale: 2;
+        align-self: center;
+    }
+}
 
 
 

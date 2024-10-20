@@ -217,7 +217,8 @@ h2 {
   font-size: 2rem;
 }
 
-p {
+p,
+li {
   font-weight: 300;
   color: var(--darkGreen);
   margin: 0;
@@ -236,6 +237,32 @@ main {
   width: 100%;
 }
 
+.spacingTop {
+  padding-top: 4.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .spacingTop {
+    padding-top: 3.5rem;
+  }
+}
+
+.mainTitle {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.decorativeLine {
+  border-bottom: 1px solid var(--darkGreen);
+  width: 100%;
+  max-width: 500px;
+}
+
 .doubleElement {
   display: flex;
   height: fit-content;
@@ -244,11 +271,23 @@ main {
   padding: 9rem 1rem;
 }
 
+.firstElement {
+  padding-top: 4.5rem;
+}
+
 .darkBackground {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
   background-color: var(--darkGreen);
 }
 
-.darkBackground h1, h2, h3, p, li {
+.darkBackground h1, 
+.darkBackground h2,
+.darkBackground h3,
+.darkBackground p,
+.darkBackground li {
   color: var(--lightBeige);
 }
 
@@ -259,7 +298,11 @@ main {
 
 @media screen and (max-width: 768px) {
   .doubleElement {
-    padding: 3.5rem 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0rem;
+    padding-bottom: 3.5rem;
+    gap: 3.5rem;
     flex-direction: column;
   }
 
@@ -317,17 +360,16 @@ main {
   max-width: 1400px;
 }
 
-.max2000{
-  max-width: 2000px;
+.max3000{
+  max-width: 3000px;
 }
 
 .maxHeight600 {
   max-height: 600px;
 }
 
-.doubleElement {
-  display: flex;
-  width: 100%;
+.maxHeight300 {
+  max-height: 300px;
 }
 
 .button {

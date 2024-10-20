@@ -1,5 +1,6 @@
 import "./styles/main.css";
 import "./styles/index.css";
+import "./styles/about.css";
 
 import { addHeader } from './header.js';
 import { addFooter } from "./footer.js";

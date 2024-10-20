@@ -1,0 +1,74 @@
+.aboutTextImages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 3.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 9rem;
+}
+
+.textBlock {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .aboutTextImages{
+        padding-bottom: 3.5rem;
+    }
+    .textBlock {
+        flex-direction: column;
+        align-items: center;
+        gap: 3.5rem;
+    }
+
+    .imageCirclesRow {
+        justify-content: center;
+    }
+}
+
+.imageCirclesRow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 3.5rem;
+    width: 250px;
+}
+
+.imageCircle {
+    width: 250px;
+    aspect-ratio: 1 / 1;
+    border-radius: 999999rem;
+    overflow: clip;
+}
+
+.circleImage {
+    display: flex;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.largeGaps {
+    gap: 3.5rem;
+}
+
+.longTextLimit p {
+    max-width: 75ch;
+}
+
+.textAndHeaderBlock {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 1rem;
+}
+
+.textAndHeaderBlock h2 {
+    font-size: 1.5rem;
+}
