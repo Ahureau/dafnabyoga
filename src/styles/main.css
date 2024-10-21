@@ -217,6 +217,20 @@ h2 {
   font-size: 2rem;
 }
 
+h3 {
+  font-weight: 700;
+  color: var(--darkGreen);
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-weight: 500;
+  color: var(--darkGreen);
+  margin: 0;
+  font-size: 1.25rem;
+}
+
 p,
 li {
   font-weight: 300;
@@ -272,7 +286,7 @@ main {
 }
 
 .firstElement {
-  padding-top: 4.5rem;
+  padding-top: 4.5rem !important;
 }
 
 .darkBackground {
