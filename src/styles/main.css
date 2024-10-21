@@ -378,12 +378,22 @@ main {
   max-width: 3000px;
 }
 
-.maxHeight600 {
-  max-height: 600px;
-}
-
-.maxHeight300 {
-  max-height: 300px;
+@media screen and (min-width: 769px) {
+  .maxHeight300 {
+    max-height: 300px;
+  }
+  
+  .maxHeight400 {
+    max-height: 400px;
+  }
+  
+  .maxHeight500 {
+    max-height: 500px;
+  }
+  
+  .maxHeight600 {
+    max-height: 600px;
+  }
 }
 
 .button {
@@ -406,6 +416,13 @@ main {
   background-color: var(--lightBeige);
   color: var(--darkGreen);
   cursor: pointer;
+}
+
+.paraH3 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
 }
 
 
