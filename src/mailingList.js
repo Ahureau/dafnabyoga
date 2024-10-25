@@ -3,7 +3,7 @@ const mailingTemplate = document.createElement('template');
 mailingTemplate.innerHTML = `
     <section id="mailingListSection" class="newsletter max1400 doubleElement">
       <div class="halfContainer mailingListImage">
-        <img src="images/DSCF8389_11zon.webp" alt="Dafna in front of hay" class="image">
+        <img src="images/DSCF8389_11zon.webp" alt="Dafna in front of hay" loading="lazy" height="300px" class="image">
       </div>
       <div class="halfContainer">
         <h2>Join my newsletter</h2>

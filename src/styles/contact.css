@@ -1,7 +1,3 @@
-.contactItem svg {
-    color: var(--darkGreen);
-}
-
 @media screen and (min-width:769px) {
     .noBottomPadding {
         padding-bottom: 0rem;

@@ -446,6 +446,15 @@ main {
 }
 
 
+.beige {
+  color: var(--lightBeige);
+}
+
+.green {
+  color: var(--darkGreen);
+}
+
+
 
 
 
