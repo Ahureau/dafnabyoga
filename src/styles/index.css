@@ -98,21 +98,6 @@
 
 /* GET IN TOUCH */
 
-#contactList {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin: 0;
-    padding: 0;
-}
-
-.contactItem {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
 .contactItem svg {
     color: var(--lightBeige);
 }

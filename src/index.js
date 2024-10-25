@@ -2,6 +2,8 @@ import "./styles/main.css";
 import "./styles/index.css";
 import "./styles/about.css";
 import "./styles/yoga.css";
+import "./styles/contact.css";
+import "./styles/corporate.css";
 
 import { addHeader } from './header.js';
 import { addFooter } from "./footer.js";
