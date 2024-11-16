@@ -24,7 +24,7 @@ mailingTemplate.innerHTML = `
                 </p>
               </li>
             </ul>
-            <input type="submit" value="Subscribe" class="button">
+            <input type="submit" value="Subscribe" class="button greenButton">
             <output name="confirmation" for="newsletterEmail">Thanks for signing up, I'll be in touch soon!</output>
           </form>
       </div>

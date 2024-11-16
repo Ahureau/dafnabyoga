@@ -278,6 +278,12 @@ main {
   max-width: 500px;
 }
 
+@media screen and (max-width: 768px) {
+  .decorativeLine {
+    display: none;
+  }
+}
+
 .doubleElement {
   display: flex;
   height: fit-content;
@@ -404,23 +410,40 @@ main {
 .button {
   text-decoration: none;
   font-weight: 400;
-  color: var(--lightBeige);
   display: flex;
   border-radius: 0.5rem;
   width: fit-content;
   align-items: center;
   height: 2.5rem;
-  background-color: var(--darkGreen);
   padding-left: 1rem;
   padding-right: 1rem;
-  border: solid 1px var(--darkGreen);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.greenButton {
+  color: var(--lightBeige);
+  background-color: var(--darkGreen);
+  border: solid 1px var(--darkGreen);
+}
+
+.beigeButton {
+  color: var(--darkGreen);
+  background-color: var(--lightBeige);
+  border: solid 1px var(--lightBeige);
+}
+
 .button:hover {
+  cursor: pointer;
+}
+
+.greenButton:hover {
   background-color: var(--lightBeige);
   color: var(--darkGreen);
-  cursor: pointer;
+}
+
+.beigeButton:hover {
+  background-color: var(--darkGreen);
+  color: var(--lightBeige);
 }
 
 .paraH3 {
