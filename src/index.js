@@ -38,7 +38,7 @@ document.getElementById('newsletterEmailForm').addEventListener('submit', functi
     const formData = new FormData(event.target);
     const email = formData.get('email');
 
-    fetch('https://script.google.com/macros/s/YOUR_DEPLOYMENT_ID/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbwrHzmv-Bc1c3pAVNNjY6GzuX2Wwm2gcyNz12wHLuhKTEW1kB1fN_IaxK_MGsNu7R1lTg/exec', {
         method: 'POST',
         body: new URLSearchParams({
             email: email,
