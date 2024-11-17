@@ -7,7 +7,7 @@ import "./styles/corporate.css";
 
 import { addHeader } from './header.js';
 import { addFooter } from "./footer.js";
-import { addMailingSection } from "./mailingList.js";
+import { addMailingSection, showConfirmation } from "./mailingList.js";
 
 const body = document.body;
 
@@ -31,14 +31,22 @@ document.addEventListener('DOMContentLoaded', () => {
         headerLinks.classList.remove('active');
     });
 
-    // Mailing list
+    // Mailing list form submit
     const form = document.getElementById('newsletterEmailForm');
     const confirmationOutput = document.querySelector('output');
-
+    let isFormSubmitted = false; // Flag to track form submission
+    
     form.addEventListener("submit", function(e) {
         e.preventDefault();
-        confirmationOutput.style.display = 'flex'; // Show the output element immediately
+    
+        if (isFormSubmitted) {
+            return;
+        }
 
+        isFormSubmitted = true; // Set the flag to true if the submission is successful
+    
+        showConfirmation(confirmationOutput);
+    
         const data = new FormData(form);
         const action = "https://script.google.com/macros/s/AKfycbwrHzmv-Bc1c3pAVNNjY6GzuX2Wwm2gcyNz12wHLuhKTEW1kB1fN_IaxK_MGsNu7R1lTg/exec"; // Get the action attribute from the form
         fetch(action, {
@@ -49,6 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
             confirmationOutput.style.display = 'none'; // Hide the output element if there's an error
             console.error('Error:', error);
             alert("Error submitting the form.");
+            isFormSubmitted = false; // Reset the flag if there's an error
         });
     });
 });

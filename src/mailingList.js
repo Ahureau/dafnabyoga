@@ -25,7 +25,7 @@ mailingTemplate.innerHTML = `
               </li>
             </ul>
             <input type="submit" value="Subscribe" class="button greenButton">
-            <output name="confirmation" for="newsletterEmail">Thanks for signing up, I'll be in touch soon!</output>
+            <output id="confirmation" name="confirmation" for="newsletterEmail" class="hidden">Thanks for signing up, I'll be in touch soon!</output>
           </form>
       </div>
     </section>
@@ -35,4 +35,10 @@ export function addMailingSection(whereAdd) {
   if (!document.querySelector('#mailingListSection')){ // Ensure it only creates a mailing section if there are none.
   whereAdd.append(mailingTemplate.content.cloneNode(true));
   }
+}
+
+export function showConfirmation() {
+  const confirmationElement = document.getElementById('confirmation');
+  confirmationElement.classList.remove('hidden');
+  confirmationElement.classList.add('visible');
 }

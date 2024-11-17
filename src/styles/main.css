@@ -735,7 +735,19 @@ output {
   padding: 0.5rem;
   border-radius: 0.5rem;
   color: var(--darkGreen);
-  display: none;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+  display: none; /* Initially hidden */
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
+  display: flex;
 }
 
 /* small screens */
