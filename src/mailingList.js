@@ -7,7 +7,7 @@ mailingTemplate.innerHTML = `
       </div>
       <div class="halfContainer">
         <h2>Join my newsletter</h2>
-          <form id="newsletterEmailForm" action="" method="POST" class="halfContainerSmallGap">
+          <form id="newsletterEmailForm" class="halfContainerSmallGap">
             <div class="smallInputGap">
               <label for="newsletterEmail">Email</label>
               <input type="email" id="newsletterEmail" name="email" placeholder="youremail@email.com" maxlength="100" pattern="^.{2,}@.{2,}\..{2,}$" autocomplete="email" required>
