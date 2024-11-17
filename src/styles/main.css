@@ -503,6 +503,16 @@ main {
   max-width: 1400px;
 }
 
+.logo {
+  object-fit: contain;
+}
+
+.largeLogo {
+  object-fit: contain;
+  width: 150px;
+  height: 160px;
+}
+
 .headerNav {
   display: flex;
 }
