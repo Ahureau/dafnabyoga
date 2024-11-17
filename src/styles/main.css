@@ -604,10 +604,6 @@ main {
     height: 60px;
   }
 
-  .headerNav {
-    padding: env(safe-area-inset-bottom);
-  }
-
   #hamburgerButton {
     display: flex;
     align-items: center;
@@ -622,7 +618,9 @@ main {
 
   #hamburgerButton svg {
     width: 24px;
+    min-width: 24px;
     height: 24px;
+    min-height: 24px;
   }
 
   .mobileMenuSpecifics {
