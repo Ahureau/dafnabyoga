@@ -172,14 +172,6 @@ textarea, select {
   --lightBeige: #FDF9F3;
 }
 
-/* 
-  https://codepen.io/sosuke/pen/Pjoqqp 
-  This allows to easily make the color of icons into what we want
-*/
-.filterSvgDark {
-  filter: invert(17%) sepia(9%) saturate(2367%) hue-rotate(121deg) brightness(98%) contrast(89%);
-}
-
 
 
 
@@ -620,7 +612,7 @@ main {
     width: 24px;
     min-width: 24px;
     height: 24px;
-    min-height: 24px;
+    min-width: 24px;
   }
 
   .mobileMenuSpecifics {
@@ -642,6 +634,13 @@ main {
     height: 40px;
     border: none;
     color: var(--darkGreen);
+  }
+
+  .closeButton svg {
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    min-width: 24px;
   }
 
   .headerLinks {
