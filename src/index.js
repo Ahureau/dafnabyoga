@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
         showConfirmation(confirmationOutput);
     
         const data = new FormData(form);
-        const action = "https://script.google.com/macros/s/AKfycbxWRegFhrUisYJR70DsUWB58MVEfkisQIKZcfM-n4pofRhZ2JR9oobxADb5q54dq3Fa/exec";
+        const action = "https://script.google.com/macros/s/AKfycbzrFRub_PZutkKUCt1kKtcSCKPLrcBnrzbk-BY_LeV2mgIU6zeofiFSyD_hJntponG-/exec";
         fetch(action, {
             method: 'POST',
             body: data,
