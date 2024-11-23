@@ -3,7 +3,7 @@ const headerTemplate = document.createElement('template');
 headerTemplate.innerHTML = `
 <header class="header">
       <div class="headerContent">
-        <a href="index.html" class="logo">
+        <a href="index" class="logo">
           <p class="srOnly">Home</p>
           <img src="./images/Logo.webp" alt="Dafna – Room for healing" width="75" height="80" aria-hidden="true" class="logo">
         </a>
@@ -23,12 +23,12 @@ headerTemplate.innerHTML = `
                   <p class="srOnly">Close</p>
                 </button>
               </li>
-              <li class="menuListItem homeLinkMobile"><a href="index.html" class="link">Home</a></li>
-              <li class="menuListItem"><a href="bodywork.html" class="link">Holistic bodywork</a></li>
-              <li class="menuListItem"><a href="yoga.html" class="link">Yoga</a></li>
-              <li class="menuListItem"><a href="corporate.html" class="link">Corporate</a></li>
-              <li class="menuListItem"><a href="about.html" class="link">About</a></li>
-              <li class="menuListItem"><a href="contact.html" class="button greenButton">Get in touch</a></li>
+              <li class="menuListItem homeLinkMobile"><a href="index" class="link">Home</a></li>
+              <li class="menuListItem"><a href="bodywork" class="link">Holistic bodywork</a></li>
+              <li class="menuListItem"><a href="yoga" class="link">Yoga</a></li>
+              <li class="menuListItem"><a href="corporate" class="link">Corporate</a></li>
+              <li class="menuListItem"><a href="about" class="link">About</a></li>
+              <li class="menuListItem"><a href="contact" class="button greenButton">Get in touch</a></li>
               <li id="mobileMenuLogo" aria-hidden="true">
                 <img src="./images/Logo.webp" alt="Dafna – Room for healing" width="150" height="160" aria-hidden="true" class="largeLogo">
               </li>

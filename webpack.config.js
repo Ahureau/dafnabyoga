@@ -83,7 +83,7 @@ module.exports = {
     ],
   },
   devServer: {
-    static: path.join(__dirname, "dist"),
+    static: path.join(__dirname, 'dist'),
     compress: true,
     port: 9000,
     open: {
@@ -93,5 +93,15 @@ module.exports = {
     },
     hot: true,
     watchFiles: ['src/**/*'],
+    historyApiFallback: {
+      index: '/index.html',
+      rewrites: [
+        { from: /^\/bodywork\/?$/, to: '/bodywork.html' },
+        { from: /^\/yoga\/?$/, to: '/yoga.html' },
+        { from: /^\/about\/?$/, to: '/about.html' },
+        { from: /^\/contact\/?$/, to: '/contact.html' },
+        { from: /^\/corporate\/?$/, to: '/corporate.html' },
+      ],
+    },
   },
 };
