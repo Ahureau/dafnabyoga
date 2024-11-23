@@ -1,0 +1,66 @@
+.container404 {
+    display: flex;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 4.5rem;
+    gap: 2rem;
+}
+
+.title404 {
+    padding-bottom: 1rem;
+}
+
+.imageContainer404 {
+    display: flex;
+    flex-basis: calc(33% - 20px);
+    flex-grow: 1;
+    height: 100%;
+    max-height: 476px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.image404 {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    max-height: 476px;
+}
+
+.text404 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-basis: calc(66% - 20px);
+    flex-grow: 2;
+}
+
+.list404 {
+    padding-left: 1rem;
+    text-indent: -1rem;
+    list-style-type: none;
+}
+
+.listItem404::before {
+    content: "💟 ";
+}
+
+
+@media screen and (max-width: 768px) {
+    .container404 {
+        flex-direction: column-reverse;
+        margin-bottom: 3.5rem;
+        padding-top: 2.5rem;
+    }
+    
+    .imageContainer404 {
+        width: 100%;
+        flex-basis: auto;
+        display: none;
+    }
+
+    .text404 {
+        flex-basis: auto;
+    }
+}
