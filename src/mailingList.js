@@ -20,7 +20,12 @@ mailingTemplate.innerHTML = `
               </li>
               <li>
                 <p>
-                  Only used to keep you up-to-date about my events and practice
+                  Receive enriching content to improve your health and wellbeing
+                </p>
+              </li>
+              <li>
+                <p>
+                  Sent once every couple of months
                 </p>
               </li>
             </ul>
