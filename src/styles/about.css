@@ -65,7 +65,7 @@
 .textAndHeaderBlock {
     display: flex;
     flex-direction: column;
-    width: fit-content;
+    width: 100%;
     gap: 1rem;
 }
 
