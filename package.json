@@ -8,7 +8,7 @@
     "build": "webpack --mode production",
     "start": "webpack serve --mode development --open-app-name 'google-chrome'",
     "lint": "eslint src",
-    "deploy": "git subtree push --prefix dist origin gh-pages"
+    "deploy": "git subtree push --prefix dist origin liveWeb"
   },
   "keywords": [],
   "author": "",
