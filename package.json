@@ -8,7 +8,8 @@
     "build": "webpack --mode production && cp ./CNAME dist/CNAME",
     "start": "webpack serve --mode development --open-app-name 'google-chrome'",
     "lint": "eslint src",
-    "deploy": "git subtree push --prefix dist origin liveWeb"
+    "deploy": "git subtree push --prefix dist origin liveWeb",
+    "subtreeForce": "git push origin `git subtree split --prefix dist main`:gh-pages --force"
   },
   "keywords": [],
   "author": "",
