@@ -47,32 +47,44 @@
 
 .eventPosters {
     display: flex;
+    justify-content: space-around;
+    gap: 5rem;
+    flex-wrap: wrap;
     width: 100%;
-    gap: 7rem;
 }
 
 .eventPoster {
     display: flex;
-    width: 100%;
-    background-color: white;
-    padding: 0 1.5rem;
+    max-width: 100%;
+    min-width: 300px;
+}
+
+.eventPoster img {
+    object-fit: contain;
     border-radius: 0.5rem;
 }
 
 @media screen and (max-width: 768px) {
     .workshopsSection {
         padding: 3.5rem 1.5rem;
+        align-items: center;
     }
 
     .eventPosters {
         flex-direction: column;
-        align-items: center;
+        justify-content: flex-start;
         gap: 2rem;
+        max-width: 100vw;
+        min-width: 100vw;
     }
 
     .eventPoster {
         width: 100vw;
         border-radius: 0;
-        padding: 1.5rem 0;
+    }
+
+    .eventPoster img {
+        height: 100%;
+        border-radius: 0rem;
     }
 }
