@@ -32,7 +32,7 @@ footerTemplate.innerHTML = `
         </li>
       </ul>
       <p class="footerText"><a href="mailto:dafnab.yoga@gmail.com">dafnab.yoga@gmail.com<a></p>
-      <p class="footerText">© Dafna Baruch 2024</p>
+      <p class="footerText">© Dafna Baruch 2025</p>
     </footer>
 `;
 
